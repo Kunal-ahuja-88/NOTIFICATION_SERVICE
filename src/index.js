@@ -11,6 +11,8 @@ app.use('/api',apiRoutes)
 
 app.listen(ServerConfig.PORT,async () => {
     console.log(`Successfully started the server on on PORT : ${ServerConfig.PORT}`)
+    /*
+    Nodemailer testing
     try {
         const response = await mailsender.sendMail({
             from : ServerConfig.GMAIL_MAIL,
@@ -22,5 +24,5 @@ app.listen(ServerConfig.PORT,async () => {
     } catch (error) {
         console.log(error)
     }
-
+    */
     })
